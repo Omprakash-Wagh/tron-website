@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/javascript.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="tRon - Conversations Evolved." />
+  <title>tRon | Evolve</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="preloader-overlay" id="preloader">
+    <div class="loader-content">
+      <div class="loader-text">INITIALIZING <span id="loader-percent">0</span>%</div>
+      <div class="loader-bar">
+        <div class="loader-progress" id="loader-progress-bar"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- WebGL Background -->
+  <canvas id="webgl-canvas"></canvas>
+
+  <!-- Overlay Grain/Noise -->
+  <div class="noise-overlay"></div>
+
+  <div id="app">
+
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="logo">
+        <img src="/logo.png" alt="tRon Logo" class="logo-img">
+        <span>T<span class="highlight-r">R</span>ON</span>
+      </div>
+      <div class="nav-links">
+        <a href="#vision" class="nav-link">Vision</a>
+        <a href="#modules" class="nav-link">Features</a>
+        <a href="#download" class="nav-link">Download</a>
+      </div>
+      <!-- Replaced Get App with Theme Toggle -->
+      <button id="nav-theme-toggle" class="nav-btn theme-btn" aria-label="Toggle Theme">
+        LIGHT MODE
+      </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="section hero" id="home">
+      <div class="container hero-content">
+        <h1 class="hero-title">CONVERSATIONS <br><span class="glitch" data-text="EVOLVED">EVOLVED</span></h1>
+        <p class="hero-desc">Your voice matters. Join the conversation where content rules and community thrives.</p>
+      </div>
+      <div class="scroll-indicator">
+        <span>SCROLL TO EXPLORE</span>
+        <div class="line"></div>
+      </div>
+    </section>
+
+    <!-- Spacer for 3D Interaction -->
+    <div class="scroll-spacer"></div>
+
+    <!-- Vision Section -->
+    <section class="section content-section" id="vision">
+      <div class="container">
+        <div class="text-block" data-speed="0.5">
+          <span class="label">01 / VISION</span>
+          <h2>REDISCOVER<br>CONNECTION</h2>
+          <p>Social media became a battlefield of attention. We built a sanctuary for thought. No algorithms, just pure
+            chronological relevance.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section (Formerly Tech/Signal Processing) -->
+    <!-- Features/Modules Section -->
+    <section class="section content-section right-align" id="modules">
+      <div class="container">
+        <div class="text-block" data-speed="0.6">
+          <span class="label">02 / FEATURES</span>
+          <h2>PLATFORM<br>UTILITIES</h2>
+          <p>A breakdown of the core utilities powering the network.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Grid (Centric Layout) -->
+    <section class="section features-overlay">
+      <div class="container">
+        <!-- Row 1 -->
+        <div class="feature-row">
+          <div class="feature-item">
+            <h3>Rooms</h3>
+            <p>Dedicated spaces for deep-diving into specific topics.</p>
+          </div>
+          <div class="feature-item">
+            <h3>Signals</h3>
+            <p>Advanced filtering tags to organize the noise.</p>
+          </div>
+          <div class="feature-item">
+            <h3>Charge</h3>
+            <p>Earn reputation through quality contributions.</p>
+          </div>
+        </div>
+        <!-- Row 2 -->
+        <div class="feature-row" style="margin-top: 0; border-top: none; padding-top: 0;">
+          <div class="feature-item">
+            <h3>Anonymous</h3>
+            <p>Post without identity, if you choose. Content is king.</p>
+          </div>
+          <div class="feature-item">
+            <h3>Real-Time</h3>
+            <p>Live updates via WebSocket connections.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Download / Final CTA -->
+    <section class="section cta-footer" id="download">
+      <div class="container">
+        <h2 class="huge-text">ENTER THE<br>NETWORK</h2>
+        <div class="cta-actions">
+          <a href="https://github.com/Omprakash-Wagh/tron-app" target="_blank" class="btn-secondary large">View on GitHub</a>
+          <a href="https://github.com/Omprakash-Wagh/tron-app/releases/download/v1.0.0/tRon.apk" class="btn-primary large">Download App</a>
+        </div>
+        <div class="footer-bottom">
+          <!-- Copyright removed as requested -->
+          <p style="font-size: 0.8rem;"><span style="opacity: 0.3;">INITIATE SEQUENCE: T</span><span
+              class="highlight-r-footer">R</span><span style="opacity: 0.3;">ON //
+              2026</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
